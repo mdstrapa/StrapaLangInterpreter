@@ -1,5 +1,6 @@
 package com.marcosoft.strapalang;
 
+import com.marcosoft.strapalang.generators.JavaGenerator;
 import com.marcosoft.strapalang.instructions.StrapaLangPrint;
 import com.marcosoft.strapalang.instructions.StrapaLangVariable;
 

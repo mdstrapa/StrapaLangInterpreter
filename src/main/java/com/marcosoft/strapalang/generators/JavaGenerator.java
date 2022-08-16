@@ -1,9 +1,9 @@
-package com.marcosoft.strapalang;
+package com.marcosoft.strapalang.generators;
 
 import com.marcosoft.strapalang.instructions.StrapaLangPrint;
 import com.marcosoft.strapalang.instructions.StrapaLangVariable;
 
-public class JavaGenerator {
+public class JavaGenerator implements SourceCodeGenerator{
 
     public String fileInitializer(String programName){
         return "public class " + programName + " {\n" +

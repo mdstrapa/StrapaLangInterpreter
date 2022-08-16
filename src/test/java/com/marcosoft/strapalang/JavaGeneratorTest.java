@@ -1,5 +1,6 @@
 package com.marcosoft.strapalang;
 
+import com.marcosoft.strapalang.generators.JavaGenerator;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
