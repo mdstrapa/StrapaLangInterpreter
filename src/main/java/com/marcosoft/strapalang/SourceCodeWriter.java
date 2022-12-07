@@ -1,6 +1,6 @@
 package com.marcosoft.strapalang;
 
-public class JavaSourceCode {
+public class SourceCodeWriter {
 
     private String code = "";
 

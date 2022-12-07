@@ -5,8 +5,28 @@ import com.marcosoft.strapalang.instructions.StrapaLangVariable;
 
 public class StrapaLangParser {
 
+    public boolean isEmptyLine(String line){
+        return line.trim().equals("");
+    }
+
     public boolean isProgramBegin(String line){
-        return line.trim().startsWith("$begin ");
+        return line.trim().startsWith("$beginProgram");
+    }
+
+    public boolean isVariableDeclaration(String line){
+        return line.trim().startsWith("$v ");
+    }
+
+    public boolean isConstantDeclaration(String line){
+        return line.trim().startsWith("$c ");
+    }
+
+    public boolean isPrint(String line){
+        return line.trim().startsWith("$p(");
+    }
+
+    public boolean isProgramEnd(String line){
+        return line.trim().startsWith("$end");
     }
 
     public String getProgramName(String line){

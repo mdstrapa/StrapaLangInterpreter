@@ -14,12 +14,12 @@ public class StrapaLangInterpreter {
         try {
             Scanner sourceCodeReader = new Scanner(sourceCode);
             String line;
-            LineInterpreter lineInterpreter = new LineInterpreter();
-            JavaSourceCode code = new JavaSourceCode();
+            LineProcessor lineProcessor = new LineProcessor();
+            SourceCodeWriter code = new SourceCodeWriter();
 
             while (sourceCodeReader.hasNextLine()){
                 line = sourceCodeReader.nextLine();
-                code.appendCode(lineInterpreter.processLine(line));
+                code.appendCode(lineProcessor.processLine(line));
             }
 
             code.print();
